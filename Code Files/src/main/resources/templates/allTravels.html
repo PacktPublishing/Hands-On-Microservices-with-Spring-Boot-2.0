@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns:th="http://www.thymeleaf.org">
+<body>
+All registered travels:
+<br>
+<tr th:each="t : ${list}">
+    userId:
+    <td th:text="${t.userId}"></td>
+    Source:
+    <td th:text="${t.source}"></td>
+    Destination:
+    <td th:text="${t.destination}"></td>
+    <br>
+</tr>
+</body>
+</html>

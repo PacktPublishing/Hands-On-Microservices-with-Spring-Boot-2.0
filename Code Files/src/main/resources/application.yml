@@ -1,0 +1,18 @@
+travel-config.supportedDestinations: BARCELONA,TENERIFE,CRETE,LONDON,PARIS
+
+management.endpoints.web.base-path: "/"
+management.endpoints.web.exposure.include: "*"
+management.health.defaults.enabled: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics
+  metrics:
+    export:
+      atlas:
+        enabled: false
+  security:
+    enabled: false
